@@ -46,7 +46,9 @@ Evaluation and prediction across multiple cell types, with all main performance 
 Typical Workflow
 
 Extract features from bigWig:
+```python
 python DNasel.py
+```
 
 Generate FASTA from CSV:
 python getfasta.py [cell_name] [genome]
@@ -54,11 +56,13 @@ python getfasta.py [cell_name] [genome]
 Embed sequences using k-mer vectors:
 python get_datavec.py [cell_name] [genome]
 
+Test/evaluate models:
+python testcell2.py
+
+## **DeepSE demo**
+
 For mESC/mouse (3 features):
 python train_specific_2_fusion.py mESC 0.001 30
 
 For human (1 feature):
 python train_specific_2_fusion2.py spleen 0.001 30
-
-Test/evaluate models:
-python testcell2.py
