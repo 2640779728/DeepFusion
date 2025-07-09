@@ -15,7 +15,7 @@
 - **Ready for cell-type generalization and comparative analysis.**
 
 ---
-Script Descriptions
+## Script Descriptions
 DNasel.py:
 Extracts numerical values from bigWig files based on regions specified in a CSV file and outputs them into a new CSV.
 
@@ -51,18 +51,28 @@ python DNasel.py
 ```
 
 Generate FASTA from CSV:
+```python
 python getfasta.py [cell_name] [genome]
+```
 
 Embed sequences using k-mer vectors:
+```python
 python get_datavec.py [cell_name] [genome]
+```
 
 Test/evaluate models:
+```python
 python testcell2.py
+```
 
-## **DeepSE demo**
+## **demo**
 
-For mESC/mouse (3 features):
+For mESC:
+```python
 python train_specific_2_fusion.py mESC 0.001 30
+```
 
-For human (1 feature):
-python train_specific_2_fusion2.py spleen 0.001 30
+For human:
+```python
+python train_specific_2_fusion2.py Pancreas 0.001 30
+```
