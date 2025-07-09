@@ -69,10 +69,10 @@ python testcell2.py
 
 For mESC:
 ```python
-python train_specific_2_fusion.py mESC 0.001 30
+python train_specific_2_fusion.py mESC 0.001 80
 ```
 
 For human:
 ```python
-python train_specific_2_fusion2.py Pancreas 0.001 30
+python train_specific_2_fusion2.py Pancreas 0.001 80
 ```
